@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.main{
+    width: 100%;
+    border: none;
+}
+.border{
+    width: 100%;
+    height: 50px;
+    /* background: rgb(33, 88, 33); */
+    margin: 0;
+    background: transparent;
+}
+.sidbar{
+    /* position: sticky; */
+    margin-top: 0;
+   margin-left: 0;
+   margin-bottom: 0;
+    padding: 0 0.7rem;
+    width: 75px;
+    height: 100vh;
+    overflow: hidden;
+     background: rgba(1, 82, 18, 0.918); 
+    transition: all 0.6s linear; 
+    font-size: 11px;  
+}
+ul img{
+    width: 24px;
+}
+.sidbar:hover{
+    width: 140px;
+ transition: all 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 15px;
+}
+.menu{
+    height: 88%;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+.menu li{
+    margin: 8px 0;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+}
+.menu li:hover{
+    background-color: #398033;
+     border: 0;
+}
+.active{
+    border-right: 2px solid rgb(242, 242, 245);
+    }
+.menu a{
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: 12px;
+}
+.menu a:hover{
+    color: #fff;
+    font-size: 12px;
+}
+.menu a span{
+    overflow: hidden;
+}
+.logout{
+    position: absolute;
+    left: 0;
+    bottom:8px;
+    width: 100%;
+}
+
+.header--section{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #fff;
+    align-items: center;
+    padding: 2px 2px;
+    margin-bottom: 1rem;
+}
+.alert{
+    display: flex;
+    gap: 2px;
+    height: 20px;
+    align-items: center;
+    margin-right: 10px;
+}
+.alert img{
+    width: 25px;
+}
+.header--title{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.header--title select {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    padding:3px 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-inline: 5px;
+}
+
+/* .user{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-inline: 20px;
+    
+} */
+.imgSection{
+    margin-left: 10px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.imgSection img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user--info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.search--box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    background: rgb(224, 219, 219);
+   
+     padding: 2px 12px;
+}
+.search--box input{
+    padding: 9px;
+    background: transparent;
+    border: none;
+    outline: none;
+      color: #fff;
+}
+.search--box img{
+    width: 30px;
+}
+
+/* main code */
+.main--section{
+     background:#ebe9e9;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+.user{
+    width: 20px;
+}
+.UserLocaion{
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+section{
+    height: 80vh;
+    background: transparent;
+    
+}
+.banerclass{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+.banerclass h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+.banerclass span{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+.totalStudent{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 30px;
+    padding-inline: 2rem;
+    margin-top: 20px;
+}
+.totalStudent h5{
+    font-size: 14px;
+    font-weight: 500;
+}
+.totalStudent p{
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: rgb(65, 61, 61);
+}
+.totalStudent span{
+    color: black;
+}
+.EidetCardStudent{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.showtable{
+    width: 100%;
+    height: 380px;
+    background-color: aliceblue;
+    margin-top: 30px;
+   scrollbar-width: thin;
+    overflow: scroll;
+}
+.section_search{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:60px ;
+    border: 0;
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+.searchbar{
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(173, 170, 170);
+    margin-right: 35px;
+    padding: 4px;
+   
+}
+.searchbar input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding:7px 5px;
+}
+
+.D_E_btn img{
+width: 30px;
+height: 25px;
+
+}
+
+.searchbar img{
+    width: 25px;
+}
+.sorting{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+}
+.sorting img{
+    width: 20px;
+    height: 30px;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.rrBtn button{
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 2px 2px 5px 2px ;
+  
+}
+.print button{
+    border: 0;
+    padding: 3px;
+    align-items: center;
+   background: transparent;
+}
+.print img{
+    width: 25px;
+}
+
+thead{
+    background: rgb(43, 134, 43);
+    color: #fff;
+}
+
+.Filter{
+    filter: blur(2px);
+}
+
+.Add_student{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+   transform: translate(-50%,-50%); 
+}
+.Add_stu{
+    width: 100%;
+    width: 500px;
+    height: 370px;
+    /* background: #85c23f; */
+    /* background-color: #b3a6a6; */
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.title{
+    width: 100%;
+    border-bottom: 2px solid green;
+}
+.student_form {
+    width: 100%;
+    align-items: center;
+    padding: 15px;
+}
+.student_form form{
+    margin-top: 40px;
+}
+.student_form input,select{
+    width: 220px;
+    margin-top: 8px;
+    padding: 3px;
+    margin-right: 5px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid green;
+}
+.btns{
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+/* print section */
+
+
+.print_header{
+    display: none;
+}
+
+.date{
+    display: none;
+}
+
+@media print{
+    .sidbar{
+    display: none;
+     }
+    .header--section{
+        display: none;
+    }
+    .totalStudent{
+        display: none;
+    }
+    
+    .EidetCardStudent{
+        display: none;
+    }
+    .print_header{
+        display: block;
+    }
+    .printSection{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    table{
+        width: 100%;
+    }
+    .showtable{
+        width: 100%;
+        height: auto;
+    }
+    .date{
+        display: block;
+    }
+
+}

@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+section{
+    width: 100%;
+    display: flex;
+}
+article{
+    width: 100%;
+}
+
+.sidbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 0.7rem;
+    width: 75px;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(1, 82, 18, 0.918);
+    transition: all 0.5s linear;
+    font-size: 11px;
+    
+}
+ul img{
+    width: 24px;
+}
+.sidbar:hover{
+    width: 140px;
+ transition: all 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 10px;
+}
+
+.logo img{
+    width: 40px;
+}
+.menu{
+    height: 88%;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+.menu li{
+    margin: 8px 0;
+    padding: 0.4rem;
+    /* border-radius: 8px; */
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+}
+.menu li:hover{
+    /* background: rgb(158, 155, 155); */
+    /* border-right: 2px solid rgb(241, 242, 245); */
+    background-color: #398033;
+     border: 0;
+     color: #fff;
+   
+}
+
+.active{
+    border-right: 2px solid rgb(242, 242, 245);
+}
+.menu a{
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: 14px;
+}
+.menu a span{
+    overflow: hidden;
+}
+.logout{
+    position: absolute;
+    left: 0;
+    bottom:8px;
+    width: 100%;
+}
+
+/* main--content */
+
+.main--content{
+    position: relative;
+    width: 100%;
+    background:#ebe9e9;
+    padding: 1rem;
+}
+.header--section{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #fff;
+    align-items: center;
+    padding: 5px 2px;
+    margin-bottom: 1rem;
+}
+.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-inline: 20px;
+    
+}
+.user--info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.search--box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    background: rgb(224, 219, 219);
+   
+     padding: 2px 12px;
+}
+.search--box input{
+    padding: 9px;
+    background: transparent;
+    border: none;
+    outline: none;
+      color: #fff;
+}
+.search--box img{
+    width: 30px;
+}
+
+/* ******** card container ********* */
+
+.card-container{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main-title{
+    color: rgba(113, 99, 186, 255) ;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.payment--card{
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 220px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+
+}
+.payment--card:hover{
+    transform: translateY(-5px);
+}
+.card-headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 200;
+}
+.amount-value{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.icon{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: red;
+}
+.card-darail{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* color css */
+.light-red{
+    background: rgb(251, 233, 233);
+}
+.light-purple{
+    background: rgb(254, 226, 254);
+}
+.light-green{
+    background: rgb(235, 254, 235);
+}
+.light-blue{
+    background: rgb(236, 236, 254);
+}
+.dark-red{
+    background: red;
+}
+.dark-purple{
+    background: purple;
+}
+.dark-green{
+    background: green;
+}
+.dark-blue{
+    background: blue;
+}
+
+/* tabular--sections */
+.tabular--wrapper{
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 2rem
+   
+}
+.tanle-container{
+width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: rgba(1, 82, 18, 0.918);
+    color: #fff;
+}
+th{
+    padding: 15px;
+    text-align: left;
+}
+tbody{
+    background: #f2f2f2;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+tr:nth-child(even){
+    background: #fff;
+}
+tfoot{
+    background: rgba(1, 82, 18, 0.918);
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td{
+    padding: 15px;
+    color: #fff;
+}
+.tanle-container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+/* table buttons for delete and update */
+.D_E_btn img{
+width: 30px;
+height: 25px;
+
+}
+.showtable{
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+    margin-top: 30px;
+   scrollbar-width: thin;
+    overflow: scroll;
+}

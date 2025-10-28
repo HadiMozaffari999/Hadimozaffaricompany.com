@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Information</title>
+    <link rel="stylesheet" href="../style/Class.css" />
+    <link rel="stylesheet" href="../Bootsrap_file/bootstrap.min.css.css" />
+    <!-- <script src="./class.js"></script> -->
+  </head>
+  <body>
+    <div class="main">
+      <!-- <div class="border"></div> -->
+      <div class="d-flex">
+        <div class="sidbar">
+          <div class="logo"></div>
+          <ul class="menu">
+            <li>
+              <a href="./Mydashbord.html">
+                <img src="../icons/icons8-dashboard-48 (1).png" alt="" />
+                <span>داشبورد</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="./Class.html">
+                <img src="../icons/class.png" alt="" />
+                <span>صنف ها</span>
+              </a>
+            </li>
+            <li>
+              <a href="./teacher.html">
+                <img src="../icons/teacher-1.png" alt="" />
+                <span>اساتید</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../icons/class.png" alt="" />
+                <span>صنف‌ جدید</span>
+              </a>
+            </li>
+            <li>
+              <a href="./Acountent.html">
+                <img src="../icons/icons8-financial-60.png" alt="" />
+                <span>حسابداری</span>
+              </a>
+            </li>
+            <li>
+              <a href="./ExpenPage.html">
+                <img src="../icons/icons8-financial-48.png" alt="" />
+                <span>مصارف</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../icons/icons8-notebook-50.png" alt="" />
+                <span>یاداشت ها</span>
+              </a>
+            </li>
+
+            <li class="logout">
+              <a href="./Mydashbord.html">
+                <img src="../icons/icons8-logout-24.png" alt="" />
+                <span>خروج</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- main code -->
+        <div class="main--section">
+          <div class="header--section shadow-sm">
+            <div class="alert"><img src="../icons/icons8-alert-30.png" alt="" /><span>4</span></div>
+            <div class="header--title">
+              <select name="select" id="">
+                <option value="">صنف‌ریاضی</option>
+                <option value="">صنف‌انگلیسی</option>
+                <option value="">صنف‌رسامی</option>
+                <option value="">ایجاد صنف جدید</option>
+              </select>
+            </div>
+            <div class="user--info">
+              <h5>Amiri</h5>
+              <div class="imgSection">
+                <img src="../icons/_MG_9313.JPG" alt="" class="user" />
+              </div>
+            </div>
+          </div>
+
+          <div class="totalStudent">
+            <h5>شاگردان :</h5>
+            <p><span>342</span> کل</p>
+            <p><span>12</span> ثبت نام شده</p>
+            <p><span>330</span> بدون ثبت نام</p>
+          </div>
+          <div class="EidetCardStudent shadow-sm container">
+            <div class="flex-row gap-3 section_search">
+              <span class="d-flex gap-2 m-3 rrBtn text-muted">
+                خدمات شاگردان :
+                <button class="btn btn-sm btn-success RejsteBtn">ثبت نام</button>
+                <a href="./S_report.html" class="btn btn-sm btn-success">گزارشات</a>
+                <button class="btn btn-sm btn-success">امتحانات</button>
+                <span class="searchbar">
+                  <img src="../icons/search(20).png" alt="" />
+                  <input type="text" placeholder="جستجو ..." />
+                </span>
+              </span>
+              <button class="btn btn-sm btn-success my-2 pb-2 Addbtn" type="button">
+                اضافه کردن
+              </button>
+            </div>
+            <div>
+              <div class="sorting my-2">
+                <img src="../icons/arrow_drop_down.png" alt="" />
+                <p>چیدمان بر اساس :</p>
+                <span class="d-flex gap-2 h-25 mx-5 text-align-center">
+                  نام : <input type="checkbox" /> تاریخ : <input type="checkbox" /> درجه :
+                  <input type="checkbox" />
+                </span>
+                <span class="float-end print">
+                  <button type="button" onclick="window.print()">
+                    <img src="../icons/icons8-print-50.png" alt="" />
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="printSection">
+            <div class="print_header">
+              <img src="../icons/lo_27.png" alt="logo" width="80" class="my-4" />
+              <h4>AMIRI HIGH EDUCATION CENTER</h4>
+            </div>
+            <div class="showtable shadow-sm p-1">
+              <table class="table table-striped bg-light table-responseve table-hover">
+                <thead>
+                  <tr>
+                    <th>نمبر</th>
+                    <th>اسم</th>
+                    <th>مضمون</th>
+                    <th>اسم پدر</th>
+                    <th>تلیفن</th>
+                    <th>فیس</th>
+                    <th>وضعیت پرداخت</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ali</td>
+                    <td>karimr</td>
+                    <td>Mohammad</td>
+                    <td>0799078880</td>
+                    <td>200</td>
+                    <td>Payed</td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn update_btn">
+                        <img src="../icons/icons8-edit-48.png " alt="" />
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn">
+                        <img src="../icons/delete-50.png" alt="" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ali</td>
+                    <td>karimr</td>
+                    <td>Mohammad</td>
+                    <td>0778725650</td>
+                    <td>200</td>
+                    <td>Unpayed</td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn update_btn outline-0">
+                        <img src="../icons/icons8-edit-48.png " alt="" />
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn">
+                        <img src="../icons/delete-50.png" alt="" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ali</td>
+                    <td>karimr</td>
+                    <td>Mohammad</td>
+                    <td>0778725650</td>
+                    <td>200</td>
+                    <td>Unpayed</td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn update_btn">
+                        <img src="../icons/icons8-edit-48.png " alt="" />
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm D_E_btn">
+                        <img src="../icons/delete-50.png" alt="" />
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="date my-5">Date: <span id="date"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add student card -->
+    <div class="Add_student shadow-sm"></div>
+    <script>
+      const dates = new Date();
+      const d = (document.getElementById("date").textContent = dates.toLocaleDateString("fa-IR"));
+      console.log(d);
+    </script>
+    <script src="./class.js"></script>
+  </body>
+</html>

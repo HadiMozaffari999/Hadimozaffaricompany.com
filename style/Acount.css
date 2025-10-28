@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #d6d3d3;
+}
+.sidbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 0.7rem;
+    width: 75px;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(1, 82, 18, 0.918);
+    transition: all 0.5s linear;
+}
+ul img{
+    width: 30px;
+}
+.sidbar:hover{
+    width: 140px;
+ transition: all 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 15px;
+}
+.menu{
+    height: 88%;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+.menu li{
+    margin: 8px 0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+}
+.menu li:hover,.active{
+    background: rgb(158, 155, 155);
+}
+.menu a{
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: 14px;
+}
+.menu a span{
+    overflow: hidden;
+}
+.logout{
+    position: absolute;
+    left: 0;
+    bottom:8px;
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    padding: 20px;
+}
+
+/* ******** card container ********* */
+
+.card-container{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main-title{
+    color: rgba(113, 99, 186, 255) ;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.payment--card{
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 220px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+
+}
+.payment--card:hover{
+    transform: translateY(-5px);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 200;
+}
+.amount-value{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.icon{
+    color: #fff;
+    padding: 1rem;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: red;
+}
+.card-darail{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* color css */
+.light-red{
+    background: rgb(251, 233, 233);
+}
+.light-purple{
+    background: rgb(254, 226, 254);
+}
+.light-green{
+    background: rgb(235, 254, 235);
+}
+.light-blue{
+    background: rgb(236, 236, 254);
+}
+.dark-red{
+    background: red;
+}
+.dark-purple{
+    background: purple;
+}
+.dark-green{
+    background: green;
+}
+.dark-blue{
+    background: blue;
+}
+
+.main_Aounting{
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 68%;
+}
+.header_acounting{
+    display: flex;
+}
+.Acounting_table{
+    width: 80%;
+    background: #777777;
+    height: 200px;
+}
+.Acounting_list{
+    width: 20%;
+    padding: 5px;
+    background: #c59090;
+    height: 100px;
+    margin-inline:5px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachers</title>
+    <link rel="stylesheet" href="Class.css">
+      <link rel="stylesheet" href="./Bootsrap_file/bootstrap.min.css.css">
+</head>
+<body>
+     <div class="main">
+        <!-- <div class="border"></div> -->
+        <div class="d-flex">
+  <div class="sidbar">
+      <div class="logo"></div>
+      <ul class="menu">
+        <li >
+          <a href="./Mydashbord.html">
+            <img src="./icons/icons8-dashboard-48 (1).png" alt="" />
+            <span>داشبورد</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="./Class.html">
+            <img src="./icons/class.png" alt="" />
+            <span>صنف ها</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="./teacher.html">
+            <img src="./icons/teacher-1.png" alt="" />
+            <span>اساتید</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/class.png" alt="" />
+            <span>صنف‌ جدید</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Acountent.html">
+            <img src="./icons/icons8-financial-60.png" alt="" />
+            <span>حسابداری</span>
+          </a>
+        </li>
+        <li>
+          <a href="./ExpenPage.html">
+            <img src="./icons/icons8-financial-48.png" alt="" />
+            <span>مصارف</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/icons8-notebook-50.png" alt="" />
+            <span>یاداشت ها</span>
+          </a>
+        </li>
+
+        <li class="logout">
+          <a href="#">
+            <img src="./icons/icons8-logout-24.png" alt="" />
+            <span>خروج</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- main code -->
+     <div class="main--section">  
+         <div class="header--section shadow-sm">
+            <div class="header--title ">
+                <h5>Teachers Panel</h5>
+            </div>
+        </div>
+        
+        <div class="EidetCardStudent shadow-sm container">
+            <div  class="flex-row gap-3 section_search" >
+               
+                <span class="d-flex gap-2 m-3  rrBtn text-muted">
+                    <span class="searchbar ">
+                        <img src="./icons/search(20).png" alt="">
+                        <input type="text" placeholder="جستجو ..." >
+                    </span>
+                </span>
+                  <button class="btn btn-sm btn-success my-2 pb-1 Addbtn" type="button">اضافه کردن</button>
+            </div>
+            <div>
+                <div class="sorting my-2">
+                    <img src="./icons/arrow_drop_down.png" alt="" >
+                    <p>چیدمان بر اساس : </p> 
+                    <span class="d-flex gap-2 h-25 mx-5 text-align-center">
+                        نام : <input type="checkbox">
+                        تاریخ : <input type="checkbox">
+                        درجه : <input type="checkbox">
+                    </span>
+                     <span class="float-end   print">
+                      <button type="button"><img src="./icons/icons8-print-50.png" alt=""></button>  
+                       </span>
+                </div>
+            </div>
+        </div>
+        <div class="container showtable shadow-sm p-1 ">
+             <table class="table table-striped  bg-light overflow-scroll table-responseve">
+                <thead>
+                    <tr>
+                        <th>نمبر</th>
+                        <th>اسم</th>
+                        <th>تخلص</th>
+                        <th>اسم پدر</th>
+                        <th>تلیفن</th>
+                        <th>فیس</th>
+                        <th>وضعیت پرداخت</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali</td>
+                        <td>karimr</td>
+                        <td>Mohammad</td>
+                        <td>0799078880</td>
+                        <td>200</td>
+                        <td>Payed</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="./icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="./icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali</td>
+                        <td>karimr</td>
+                        <td>Mohammad</td>
+                        <td>0778725650</td>
+                        <td>200</td>
+                        <td>Unpayed</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn outline-0"><img src="./icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="./icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali</td>
+                        <td>karimr</td>
+                        <td>Mohammad</td>
+                        <td>0778725650</td>
+                        <td>200</td>
+                        <td>Unpayed</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="./icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="./icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+     </div>
+        </div>
+      
+    </div>
+</body>
+</html>

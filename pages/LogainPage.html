@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logain</title>
+    <link rel="stylesheet" href="../style/logain.css" />
+    <link rel="stylesheet" href="../Bootsrap_file/bootstrap.min.css.css" />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <div class="main-item-1 rounded">
+          <div class="title_header">
+            <h6>خوش آمدید</h6>
+            <h3>لطفا رمز تان را وارید نماید.</h3>
+          </div>
+
+          <!-- <select name="" id="" class="select">
+            <option value="">مدیر</option>
+            <option value="">استاد</option>
+          </select> -->
+          <input type="text" name="" id="name" placeholder="نام" />
+          <input type="password" placeholder="رمزتان را واردکنید " id="pass" />
+          <div class="mt-4 d-flex gap-2 mx-5">
+            <button class="btn btn-sm btn-success" onclick="logain()">وارید</button>
+            <button class="btn btn-sm btn-warning">خارج</button>
+          </div>
+        </div>
+        <div class="main-item-2">
+          <img src="../icons/student-30.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const logain = () => {
+        const name = "Amiri";
+        const pass = "12345678";
+        const n = document.querySelector("#name").value;
+        const p = document.querySelector("#pass").value;
+
+        if (n === name) {
+            // location.replace(`${location.origin}`);
+            console.log( location.replace(`${location.origin}/C://Users/Hadi Mozaffari/Desktop/DB_project/pages/Mydashbord.html`));
+            
+            
+        } else {
+            console.log("not foind");
+            
+          alert("password or name not found");
+        }
+      };
+    </script>
+  </body>
+</html>

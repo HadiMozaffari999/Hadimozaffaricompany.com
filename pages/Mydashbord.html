@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashbord</title>
+    <link rel="stylesheet" href="../style/my_das_style.css" />
+    <link rel="stylesheet" href="../Bootsrap_file/bootstrap.min.css.css">
+  </head>
+  <body>
+    <section>
+      <div class="sidbar">
+        <div class="logo">
+          <img src="/icons/lo_27.png" alt="">
+        </div>
+        <ul class="menu">
+          <li class="active">
+            <a href="#/" class="text-white">
+              <img src="../icons/icons8-dashboard-48 (1).png" alt="" />
+              <span>داشبورد</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="Class.html" class="text-white">
+              <img src="../icons/class.png" alt="" />
+              <span>صنف ها</span>
+            </a>
+          </li>
+          <li>
+            <a href="teacher.html" class="text-white">
+              <img src="../icons/teacher-1.png" alt="" />
+              <span>اساتید</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white">
+              <img src="../icons/class.png" alt="" />
+              <span>صنف‌ جدید</span>
+            </a>
+          </li>
+          <li>
+            <a href="./Acountent.html" class="text-white">
+              <img src="../icons/icons8-financial-60.png" alt="" />
+              <span>حسابداری</span>
+            </a>
+          </li>
+          <li>
+            <a href="/ExpenPage.html" class="text-white">
+              <img src="../icons/icons8-financial-48.png" alt="" />
+              <span>مصارف</span>
+            </a>
+          </li>
+          <li >
+            <a href="" class="text-white">
+             
+               <img src="../icons/icons8-report-48.png" alt="" />
+              <span>امتحانات عمومی</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white">
+              <img src="../icons/icons8-notebook-50.png" alt="" />
+              <span>یاداشت ها</span>
+            </a>
+          </li>
+
+          <li class="logout">
+            <a href="./LogainPage.html" class="text-white">
+              <img src="../icons/icons8-logout-24.png" alt="" />
+              <span>خروج</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- main content -->
+       <article>
+         <div class="main--content">
+        <!-- <div class="header--section">
+          <div class="header--title">
+            <span>Primary</span>
+          </div>
+          <div class="user--info">
+            <div class="search--box">
+              <input type="text" placeholder="جستجو ..." />
+              <img src="./icons/search(20).png" alt="" />
+            </div>
+            <img src="./icons/img.jpg" alt="" class="user" />
+          </div>
+        </div> -->
+
+        <div class="card-container">
+          <h3 class="main-title">دیتا امروز</h3>
+          <div class="card-wrapper">
+            <div class="payment--card light-red">
+              <div class="card-headers">
+                <div class="amount">
+                  <span class="title">تعدادشاگردان</span>
+                  <span class="amount-value">نفر500</span>
+                </div>
+
+                <img src="../icons/users.png" alt="" class="fa fa-dollar icon" />
+              </div>
+              <span class="card-darail">*** *** 348</span>
+            </div>
+
+            <div class="payment--card light-purple">
+              <div class="card-headers">
+                <div class="amount">
+                  <span class="title">تعداداساتید</span>
+                  <span class="amount-value">20نفر </span>
+                </div>
+
+                <img src="../icons/student.png" alt="" class="fa fa-dollar icon dark-purple" />
+              </div>
+              <span class="card-darail">*** *** 584</span>
+            </div>
+
+            <div class="payment--card light-green">
+              <div class="card-headers">
+                <div class="amount">
+                  <span class="title">درآمد این ماه</span>
+                  <span class="amount-value">$350.00</span>
+                </div>
+               <img src="../icons/9374414.png" alt="" class="icon">
+              </div>
+              <span class="card-darail">*** *** 745</span>
+            </div>
+
+            <div class="payment--card light-blue">
+              <div class="card-headers">
+                <div class="amount">
+                  <span class="title">مصارف</span>
+                  <span class="amount-value">$200.00</span>
+                </div>
+                <i class="fa fa-dollar icon dark-blue" aria-hidden="false"></i>
+              </div>
+              <span class="card-darail">*** *** 868</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- finance data -->
+        <div class="tabular--wrapper">
+          <h3 class="main-title">مصارف ماه سنبله</h3>
+          <div class="tanle-container">
+            <!-- <table>
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Transaction type</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Category</th>
+                  <th>Statuse</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2024-05-01</td>
+                  <td>Expenses</td>
+                  <td>Office supplies</td>
+                  <td>$250</td>
+                  <td>Office Expenses</td>
+                  <td>Pending</td>
+                  <td><button>Edite</button></td>
+                </tr>
+                <tr>
+                  <td>2024-05-01</td>
+                  <td>Expenses</td>
+                  <td>Office supplies</td>
+                  <td>$250</td>
+                  <td>Office Expenses</td>
+                  <td>Pending</td>
+                  <td><button>Edite</button></td>
+                </tr>
+                <tr>
+                  <td>2024-05-01</td>
+                  <td>Expenses</td>
+                  <td>Office supplies</td>
+                  <td>$250</td>
+                  <td>Office Expenses</td>
+                  <td>Pending</td>
+                  <td><button>Edite</button></td>
+                </tr>
+                <tr>
+                  <td>2024-05-01</td>
+                  <td>Expenses</td>
+                  <td>Office supplies</td>
+                  <td>$250</td>
+                  <td>Office Expenses</td>
+                  <td>Pending</td>
+                  <td><button>Edite</button></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="7">Total :$1,000</td>
+                </tr>
+              </tfoot>
+            </table> -->
+          <div class="showtable">
+              <table class="table table-striped  bg-light overflow-scroll table-responseve">
+                <thead>
+                    <tr>
+                        <th>نمبر</th>
+                        <th>اسم</th>
+                        <th>تخلص</th>
+                        <th>نوعیت</th>
+                        <th>ازبابت</th>
+                        <th>مقدار</th>
+                        <th>تاریخ</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>نصرت</td>
+                        <td>پویا</td>
+                        <td>برداشت</td>
+                        <td>معاش</td>
+                        <td>2000AF</td>
+                        <td>1404-06-22</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="../icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="../icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>فرهاد</td>
+                        <td>اکرمی</td>
+                        <td>برداشت</td>
+                        <td>معاش</td>
+                        <td>2000Af</td>
+                        <td>1404-07-09</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="../icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="../icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>احمد</td>
+                        <td>احمدی</td>
+                        <td>مصرف</td>
+                        <td>مالیه</td>
+                        <td>4000Af</td>
+                        <td>1404-07-14</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="../icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="../icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>حسن</td>
+                        <td>قربانی</td>
+                        <td>برداشت</td>
+                        <td>معاش</td>
+                        <td>3500Af</td>
+                        <td>1404-07-20</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn outline-0"><img src="../icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="../icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>احمد</td>
+                        <td>احمدی</td>
+                        <td>مصرف</td>
+                        <td>خرید میز وچوکی</td>
+                        <td>6000Af</td>
+                        <td>1404-08-11</td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn update_btn"><img src="../icons/icons8-edit-48.png " alt=""></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm D_E_btn"><img src="../icons/delete-50.png" alt=""></button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+           
+          </div>
+        </div>
+      </div>
+       </article>
+     
+    </section>
+  </body>
+</html>
