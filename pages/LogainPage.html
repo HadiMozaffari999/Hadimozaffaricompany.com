@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logain</title>
-    <link rel="stylesheet" href="../style/logain.css" />
+    <title>صفحه ورود</title>
     <link rel="stylesheet" href="../Bootsrap_file/bootstrap.min.css.css" />
+    <link rel="stylesheet" href="../style/logain.css" />
   </head>
   <body>
-    <section>
-      <div class="main">
-        <div class="main-item-1 rounded">
-          <div class="title_header">
-            <h6>خوش آمدید</h6>
-            <h3>لطفا رمز تان را وارید نماید.</h3>
+    <section class="login-section">
+      <div class="login-card">
+        <div class="login-form-side">
+          <div class="brand-badge">Hadimozaffari Company</div>
+          <h1>خوش آمدید 👋</h1>
+          <p>برای ورود به پنل مدیریتی، نام کاربری و رمز عبور خود را وارد کنید.</p>
+
+          <label for="name">نام کاربری</label>
+          <input type="text" id="name" placeholder="مثال: Amiri" />
+
+          <label for="pass">رمز عبور</label>
+          <input type="password" id="pass" placeholder="رمز عبور" />
+
+          <div class="remember-row">
+            <label class="remember-checkbox">
+              <input type="checkbox" />
+              <span>مرا به خاطر بسپار</span>
+            </label>
+            <a href="#">رمز را فراموش کرده‌اید؟</a>
           </div>
 
-          <!-- <select name="" id="" class="select">
-            <option value="">مدیر</option>
-            <option value="">استاد</option>
-          </select> -->
-          <input type="text" name="" id="name" placeholder="نام" />
-          <input type="password" placeholder="رمزتان را واردکنید " id="pass" />
-          <div class="mt-4 d-flex gap-2 mx-5">
-            <button class="btn btn-sm btn-success" onclick="logain()">وارید</button>
-            <button class="btn btn-sm btn-warning">خارج</button>
+          <div class="action-row">
+            <button class="btn-login" onclick="logain()">ورود به حساب</button>
+            <button class="btn-exit" onclick="clearForm()">پاک کردن</button>
           </div>
         </div>
-        <div class="main-item-2">
-          <img src="../icons/student-30.png" alt="" />
+
+        <div class="login-hero-side">
+          <img src="../icons/student-30.png" alt="login" />
+          <h2>یادگیری هوشمند، مدیریت ساده</h2>
+          <p>با ورود به سیستم، به داشبورد، گزارش‌ها و ابزارهای آموزشی دسترسی پیدا کنید.</p>
         </div>
       </div>
     </section>
@@ -37,19 +47,19 @@
       const logain = () => {
         const name = "Amiri";
         const pass = "12345678";
-        const n = document.querySelector("#name").value;
-        const p = document.querySelector("#pass").value;
+        const n = document.querySelector("#name").value.trim();
+        const p = document.querySelector("#pass").value.trim();
 
-        if (n === name) {
-            // location.replace(`${location.origin}`);
-            console.log( location.replace(`${location.origin}/C://Users/Hadi Mozaffari/Desktop/DB_project/pages/Mydashbord.html`));
-            
-            
+        if (n === name && p === pass) {
+          location.replace("./Mydashbord.html");
         } else {
-            console.log("not foind");
-            
-          alert("password or name not found");
+          alert("نام کاربری یا رمز عبور اشتباه است.");
         }
+      };
+
+      const clearForm = () => {
+        document.querySelector("#name").value = "";
+        document.querySelector("#pass").value = "";
       };
     </script>
   </body>
